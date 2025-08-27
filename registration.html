@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration - Kwa Kay Night Club</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #111; color: white; text-align: center; }
+    header { background: #222; padding: 15px; }
+    nav a { color: cyan; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    form { background: #222; padding: 20px; margin: 30px auto; width: 60%; border-radius: 10px; }
+    table { margin: auto; text-align: left; }
+    td { padding: 8px; }
+    input, select, textarea { padding: 6px; border-radius: 5px; border: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="registration.html">Registration</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <h1>Registration Form</h1>
+  <form>
+    <table>
+      <tr>
+        <td>Name:</td>
+        <td><input type="text" placeholder="Enter your name" required></td>
+      </tr>
+      <tr>
+        <td>Surname:</td>
+        <td><input type="text" placeholder="Enter your surname" required></td>
+      </tr>
+      <tr>
+        <td>City:</td>
+        <td>
+          <select>
+            <option>--Select--</option>
+            <option>Durban</option>
+            <option>Cape Town</option>
+            <option>Polokwane</option>
+            <option>Johannesburg</option>
+            <option>Mbombela</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Gender:</td>
+        <td>
+          <input type="radio" name="gender"> Male
+          <input type="radio" name="gender"> Female
+        </td>
+      </tr>
+      <tr>
+        <td>Attachments:</td>
+        <td><input type="file"></td>
+      </tr>
+      <tr>
+        <td>Comments:</td>
+        <td><textarea rows="5" cols="25"></textarea></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="Submit"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
